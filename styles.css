@@ -1,175 +1,199 @@
 /* styles.css */
 
 body {
-    margin: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  hr {
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
-  }
-  
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+h1 {
+  margin: 50px auto 0;
+  font-size: 3rem;
+  font-family: 'Scaramento', cursive;
+  color: #66BFBF;
+}
+
+.contact-msg {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.profile img.dp {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 20px;
+}
+
+.profile h2 {
+  font-family: 'Monteserrat', sans-serif;
+  font-size: 2rem;
+  color: #4aa7a7;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.intro {
+  width: 70%;
+  margin: 0 auto 40px;
+}
+
+.skills h2 {
+  font-family: 'Monteserrat', sans-serif;
+  font-size: 2rem;
+  color: #4aa7a7;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.skill-row {
+  width: 90%;
+  margin: 100px auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.skill-row img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.skill-row h3 {
+  font-family: 'Monteserrat', sans-serif;
+  color: #11999E;
+  margin-bottom: 10px;
+}
+
+.contact-me h2 {
+  font-family: 'Monteserrat', sans-serif;
+  font-size: 2rem;
+  color: #4aa7a7;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.contact-me img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.footer-link {
+  color: #EAF6F6;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
   h1 {
-    margin: 50px auto 0;
-    font-size: 3rem;
-    font-family: 'Scaramento', cursive;
-    color: #66BFBF;
+    font-size: 2.5rem;
   }
-  
-  .contact-msg {
-    width: 40%;
-    margin: 40px auto 60px;
-  }
-  
-  .top-container {
-    background-color: #E4F9F5;
-    position: relative;
-    padding-top: 100px;
-  }
-  
-  .top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-  }
-  
-  .bottom-cloud {
-    position: absolute;
-    left: 250px;
-    bottom: 300px;
-  }
-  
-  .bottom-container {
-    background-color: #66BFBF;
-    padding: 50px 0 20px;
-  }
-  
-  .middle-container {
-    margin: 100px 0;
-  }
-  
-  .profile img.dp {
-    width: 128px;
-    height: 128px;
-    margin: 0 auto 20px;
-  }
-  
-  .profile h2 {
-    font-family: 'Monteserrat', sans-serif;
-    font-size: 2rem;
-    color: #4aa7a7;
-    font-weight: normal;
-    padding-bottom: 10px;
-  }
-  
-  .intro {
-    width: 70%;
-    margin: 0 auto 40px;
-  }
-  
-  .skills h2 {
-    font-family: 'Monteserrat', sans-serif;
-    font-size: 2rem;
-    color: #4aa7a7;
-    font-weight: normal;
-    padding-bottom: 20px;
-  }
-  
+
+  .intro,
   .skill-row {
     width: 90%;
-    margin: 100px auto;
-    text-align: center;
-    line-height: 1.5;
   }
-  
-  .skill-row img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+
+  .contact-msg {
+    width: 80%;
   }
-  
-  .skill-row h3 {
-    font-family: 'Monteserrat', sans-serif;
-    color: #11999E;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
   }
-  
-  .contact-me h2 {
-    font-family: 'Monteserrat', sans-serif;
+
+  .intro,
+  .skill-row {
+    width: 90%;
+  }
+
+  .contact-msg {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
     font-size: 2rem;
-    color: #4aa7a7;
-    font-weight: normal;
-    padding-bottom: 10px;
   }
-  
-  .contact-me img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
+
+  .intro,
+  .skill-row,
+  .contact-msg {
+    width: 100%;
   }
-  
-  .btn {
-    background: #11cdd4;
-    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-    border-radius: 8px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
+
+  .top-cloud,
+  .bottom-cloud {
+    display: none;
   }
-  
-  .btn:hover {
-    background: #30e3cb;
-    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-    text-decoration: none;
+
+  .profile img.dp {
+    width: 96px;
+    height: 96px;
   }
-  
-  .footer-link {
-    color: #EAF6F6;
-    text-decoration: none;
-    margin: 10px 20px;
-  }
-  
-  .footer-link:hover {
-    color: #ffffff;
-  }
-  
-  /* Responsive Design */
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    .intro,
-    .skill-row {
-      width: 90%;
-    }
-  
-    .contact-msg {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 2rem;
-    }
-  
-    .intro,
-    .skill-row,
-    .contact-msg {
-      width: 100%;
-    }
-  }
-  
+}
